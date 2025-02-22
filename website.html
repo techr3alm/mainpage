@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechR3alm's Main Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <style>
+        .is-top.is-left {
+          position: absolute;
+          bottom: 20px;
+          right: 30px;
+        }
+        .tabs {
+          margin-top: 10px;
+        }
+        .title-bar-icon {
+          width: 16px;
+          height: 16px;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        .about-me-icon {
+          width: 50px;
+          height: 50px;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+        .window {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 700px;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+        }
+        .window-body {
+          overflow: auto;
+          display: flex;
+          padding: 10px;
+          flex-direction: column;
+          padding: 0px;
+        }
+        body {
+          background: url('windows_7_54.jpg') no-repeat center center fixed;
+          background-size: cover;
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .field-row {
+          display: flex;
+        }
+        .field-row2{
+          display: flex;
+          align-items: center;
+        }
+        .button-row {
+          margin-top: auto;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .exit-button {
+          margin-right: 6px;
+        }
+    </style>
+</head>
+
+<div class="window glass active">
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <img src="88.ico" alt="Window Icon" class="title-bar-icon"> 
+        About Me
+    </div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+  </div>
+  </div>
+  <div class="window-body has-space">
+    <ul role="menubar" class="can-hover">
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        File
+        <ul role="menu">
+          <li role="menuitem">
+            <a href="#menubar">
+              Open <span>Ctrl+O</span>
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="#menubar">
+              Save <span>Ctrl+S</span>
+            </a>
+          </li>
+          <li role="menuitem" class="has-divider">
+            <a href="#menubar">
+              Save As... <span>Ctrl+Shift+S</span>
+            </a>
+          </li>
+          <li role="menuitem"><a href="#menubar">Exit</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        Edit
+        <ul role="menu">
+          <li role="menuitem"><a href="#menubar">Undo</a></li>
+          <li role="menuitem"><a href="#menubar">Copy</a></li>
+          <li role="menuitem"><a href="#menubar">Cut</a></li>
+          <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
+          <li role="menuitem"><a href="#menubar">Delete</a></li>
+          <li role="menuitem"><a href="#menubar">Find...</a></li>
+          <li role="menuitem"><a href="#menubar">Replace...</a></li>
+          <li role="menuitem"><a href="#menubar">Go to...</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        View
+        <ul role="menu">
+          <li role="menuitem" tabindex="0" aria-haspopup="true">
+            Zoom
+            <ul role="menu">
+              <li role="menuitem"><button>Zoom In</button></li>
+              <li role="menuitem"><button>Zoom Out</button></li>
+            </ul>
+          </li>
+          <li role="menuitem"><a href="#menubar">Status Bar</a></li>
+        </ul>
+      </li>
+      <li role="menuitem" tabindex="0" aria-haspopup="true">
+        Help
+        <ul role="menu">
+          <li role="menuitem"><a href="#menubar">View Help</a></li>
+          <li role="menuitem"><a href="#menubar">About</a></li>
+        </ul>
+      </li>
+    </ul>
+    <section class="tabs">
+      <menu role="tablist" aria-label="Tabs Template">
+        <button role="tab" aria-controls="info" aria-selected="true">Info</button>
+        <button role="tab" aria-controls="other" disabled>Other</button>
+      </menu>
+      <article role="tabpanel" id="info">
+        <fieldset>
+          <legend>Favourite games</legend>
+          <div class="field-row2">
+            <img src="14.ico" class="about-me-icon">
+            <p>My favourite games are: Garry's Mod, Minecraft and all sorts of sandbox games</p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Birthday</legend>
+          <div class="field-row2">
+            <img src="1024.ico" class="about-me-icon">
+            <p>My birthday is on March 29th</p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>What do i do</legend>
+          <div class="field-row2">
+            <img src="81.ico" class="about-me-icon">
+            <p>I'm a designer and programmer</p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>How can you contact me</legend>
+          <div class="field-row2">
+            <img src="25.ico" class="about-me-icon">
+            <p>You can text me on discord (@techr3alm) or send an email to techr3alm@fluentix.com</p>
+          </div>
+        </fieldset>
+      </article>
+
+    </section>
+    <section class="button-row" style="justify-content: flex-end">
+      <div>
+        <button class="exit-button">Exit</button>
+      </div>
+      <div>
+        <button>OK</button>
+      </div>
+    </section>
+  </div>
+</div>
+<div role="tooltip" class="is-top is-left">Psst. This website was made using 7.css</div>
